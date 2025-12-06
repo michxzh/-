@@ -1,0 +1,597 @@
+[
+  {
+    "id": "1",
+    "type": "system",
+    "avatar": "system",
+    "nickname": "抖音安全中心",
+    "summary": "你的账号存在异常登录风险，请尽快修改密码。",
+    "contentType": "text",
+    "imageName": null,
+    "actionTitle": null,
+    "createdAt": "2025-12-05T10:00:00Z",
+    "unreadCount": 1,
+    "remark": null,
+    "isPinned": false
+  },
+  {
+    "id": "2",
+    "type": "directMessage",
+    "avatar": "avatar1",
+    "nickname": "小王",
+    "summary": "发你一张照片看看！",
+    "contentType": "image",
+    "imageName": "sample1",
+    "actionTitle": null,
+    "createdAt": "2025-01-29T08:20:00Z",
+    "unreadCount": 2,
+    "remark": null,
+    "isPinned": false
+  },
+  {
+    "id": "3",
+    "type": "system",
+    "avatar": "event",
+    "nickname": "抖音活动中心",
+    "summary": "你有一个新人奖励待领取！",
+    "contentType": "action",
+    "imageName": null,
+    "actionTitle": "领取奖励",
+    "createdAt": "2025-01-29T09:30:00Z",
+    "unreadCount": 0,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "4",
+    "type": "directMessage",
+    "avatar": "avatar2",
+    "nickname": "小李",
+    "summary": "最近怎么样？",
+    "contentType": "text",
+    "imageName": null,
+    "actionTitle": null,
+    "createdAt": "2025-01-28T12:00:00Z",
+    "unreadCount": 0,
+    "remark": null,
+    "isPinned": false
+  },
+  {
+    "id": "5",
+    "type": "directMessage",
+    "avatar": "avatar3",
+    "nickname": "好友A",
+    "summary": "我去旅游啦～发你看看！",
+    "contentType": "image",
+    "imageName": "sample2",
+    "actionTitle": null,
+    "createdAt": "2025-01-28T14:02:00Z",
+    "unreadCount": 3,
+    "remark": null,
+    "isPinned": false
+  },
+  {
+    "id": "6",
+    "type": "system",
+    "avatar": "event",
+    "nickname": "抖音活动中心",
+    "summary": "直播专属红包可以领取啦！",
+    "contentType": "action",
+    "imageName": null,
+    "actionTitle": "马上领取",
+    "createdAt": "2025-01-27T07:45:00Z",
+    "unreadCount": 1,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "7",
+    "type": "directMessage",
+    "avatar": "avatar4",
+    "nickname": "Lucy",
+    "summary": "昨天拍的照片给你看看～",
+    "contentType": "image",
+    "imageName": "sample3",
+    "actionTitle": null,
+    "createdAt": "2025-01-27T16:20:00Z",
+    "unreadCount": 1,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "8",
+    "type": "directMessage",
+    "avatar": "avatar5",
+    "nickname": "小陈",
+    "summary": "你今天有空吗？",
+    "contentType": "text",
+    "imageName": null,
+    "actionTitle": null,
+    "createdAt": "2025-01-26T11:10:00Z",
+    "unreadCount": 4,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "9",
+    "type": "system",
+    "avatar": "system",
+    "nickname": "系统通知",
+    "summary": "你的关注列表有 5 位新动态。",
+    "contentType": "text",
+    "imageName": null,
+    "actionTitle": null,
+    "createdAt": "2025-01-26T09:00:00Z",
+    "unreadCount": 0,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "10",
+    "type": "system",
+    "avatar": "event",
+    "nickname": "任务中心",
+    "summary": "连续签到 3 天奖励可领取！",
+    "contentType": "action",
+    "imageName": null,
+    "actionTitle": "立即签到",
+    "createdAt": "2025-01-25T20:10:00Z",
+    "unreadCount": 1,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "11",
+    "type": "directMessage",
+    "avatar": "avatar2",
+    "nickname": "阿豪",
+    "summary": "帮我看看这个视频？",
+    "contentType": "image",
+    "imageName": "sample4",
+    "actionTitle": null,
+    "createdAt": "2025-01-25T13:40:00Z",
+    "unreadCount": 2,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "12",
+    "type": "directMessage",
+    "avatar": "avatar3",
+    "nickname": "Mike",
+    "summary": "明天去哪吃？",
+    "contentType": "text",
+    "imageName": null,
+    "actionTitle": null,
+    "createdAt": "2025-01-24T11:00:00Z",
+    "unreadCount": 1,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "13",
+    "type": "system",
+    "avatar": "event",
+    "nickname": "福利中心",
+    "summary": "你的专属优惠券已下发！",
+    "contentType": "action",
+    "imageName": null,
+    "actionTitle": "立即使用",
+    "createdAt": "2025-01-24T07:00:00Z",
+    "unreadCount": 0,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "14",
+    "type": "directMessage",
+    "avatar": "avatar6",
+    "nickname": "阿东",
+    "summary": "昨天那个事情怎么说？",
+    "contentType": "text",
+    "imageName": null,
+    "actionTitle": null,
+    "createdAt": "2025-01-23T10:20:00Z",
+    "unreadCount": 5,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "15",
+    "type": "directMessage",
+    "avatar": "avatar5",
+    "nickname": "琪琪",
+    "summary": "看我新拍的照片！",
+    "contentType": "image",
+    "imageName": "sample5",
+    "actionTitle": null,
+    "createdAt": "2025-01-23T15:00:00Z",
+    "unreadCount": 1,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "16",
+    "type": "system",
+    "avatar": "system",
+    "nickname": "系统助手",
+    "summary": "你有 2 条未读通知。",
+    "contentType": "text",
+    "imageName": null,
+    "actionTitle": null,
+    "createdAt": "2025-01-22T18:00:00Z",
+    "unreadCount": 0,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "17",
+    "type": "system",
+    "avatar": "event",
+    "nickname": "活动中心",
+    "summary": "新人福利，从这里开始！",
+    "contentType": "action",
+    "imageName": null,
+    "actionTitle": "查看福利",
+    "createdAt": "2025-01-22T09:30:00Z",
+    "unreadCount": 1,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "18",
+    "type": "directMessage",
+    "avatar": "avatar1",
+    "nickname": "Tom",
+    "summary": "帮我看看这段代码？",
+    "contentType": "text",
+    "imageName": null,
+    "actionTitle": null,
+    "createdAt": "2025-01-21T16:10:00Z",
+    "unreadCount": 2,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "19",
+    "type": "directMessage",
+    "avatar": "avatar2",
+    "nickname": "朋友B",
+    "summary": "发你几张图～",
+    "contentType": "image",
+    "imageName": "sample6",
+    "actionTitle": null,
+    "createdAt": "2025-01-21T13:00:00Z",
+    "unreadCount": 3,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "20",
+    "type": "system",
+    "avatar": "system",
+    "nickname": "抖音运营",
+    "summary": "你关注的主播正在直播中～",
+    "contentType": "text",
+    "imageName": null,
+    "actionTitle": null,
+    "createdAt": "2025-01-20T19:40:00Z",
+    "unreadCount": 0,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "21",
+    "type": "system",
+    "avatar": "event",
+    "nickname": "直播福利社",
+    "summary": "你的直播奖励可领取！",
+    "contentType": "action",
+    "imageName": null,
+    "actionTitle": "立即领取",
+    "createdAt": "2025-01-20T09:20:00Z",
+    "unreadCount": 1,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "22",
+    "type": "directMessage",
+    "avatar": "avatar4",
+    "nickname": "小美",
+    "summary": "昨天那张照片好看吗？",
+    "contentType": "image",
+    "imageName": "sample3",
+    "actionTitle": null,
+    "createdAt": "2025-01-19T14:40:00Z",
+    "unreadCount": 2,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "23",
+    "type": "directMessage",
+    "avatar": "avatar6",
+    "nickname": "Peter",
+    "summary": "新的项目进度如何？",
+    "contentType": "text",
+    "imageName": null,
+    "actionTitle": null,
+    "createdAt": "2025-01-19T11:00:00Z",
+    "unreadCount": 1,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "24",
+    "type": "system",
+    "avatar": "event",
+    "nickname": "奖励中心",
+    "summary": "连续登录奖励 x2！",
+    "contentType": "action",
+    "imageName": null,
+    "actionTitle": "立即领取",
+    "createdAt": "2025-01-18T09:10:00Z",
+    "unreadCount": 0,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "25",
+    "type": "directMessage",
+    "avatar": "avatar5",
+    "nickname": "Amy",
+    "summary": "晚上要一起吃饭吗？",
+    "contentType": "text",
+    "imageName": null,
+    "actionTitle": null,
+    "createdAt": "2025-01-18T17:00:00Z",
+    "unreadCount": 3,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "26",
+    "type": "directMessage",
+    "avatar": "avatar3",
+    "nickname": "好友C",
+    "summary": "发你美食照！",
+    "contentType": "image",
+    "imageName": "sample4",
+    "actionTitle": null,
+    "createdAt": "2025-01-17T13:00:00Z",
+    "unreadCount": 1,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "27",
+    "type": "system",
+    "avatar": "system",
+    "nickname": "系统通知",
+    "summary": "你有新的粉丝关注你啦。",
+    "contentType": "text",
+    "imageName": null,
+    "actionTitle": null,
+    "createdAt": "2025-01-17T07:00:00Z",
+    "unreadCount": 0,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "28",
+    "type": "system",
+    "avatar": "event",
+    "nickname": "限时福利",
+    "summary": "限时折扣仅剩 3 小时！",
+    "contentType": "action",
+    "imageName": null,
+    "actionTitle": "去看看",
+    "createdAt": "2025-01-16T20:10:00Z",
+    "unreadCount": 1,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "29",
+    "type": "directMessage",
+    "avatar": "avatar6",
+    "nickname": "David",
+    "summary": "我换头像啦哈哈～",
+    "contentType": "image",
+    "imageName": "sample2",
+    "actionTitle": null,
+    "createdAt": "2025-01-16T12:00:00Z",
+    "unreadCount": 4,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "30",
+    "type": "directMessage",
+    "avatar": "avatar1",
+    "nickname": "Emma",
+    "summary": "在干嘛？",
+    "contentType": "text",
+    "imageName": null,
+    "actionTitle": null,
+    "createdAt": "2025-01-15T08:30:00Z",
+    "unreadCount": 2,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "31",
+    "type": "system",
+    "avatar": "event",
+    "nickname": "任务中心",
+    "summary": "你有未完成任务，点击继续进行～",
+    "contentType": "action",
+    "imageName": null,
+    "actionTitle": "继续任务",
+    "createdAt": "2025-01-15T07:45:00Z",
+    "unreadCount": 1,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "32",
+    "type": "directMessage",
+    "avatar": "avatar3",
+    "nickname": "小张",
+    "summary": "要不要喝奶茶？",
+    "contentType": "text",
+    "imageName": null,
+    "actionTitle": null,
+    "createdAt": "2025-01-14T10:00:00Z",
+    "unreadCount": 1,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "33",
+    "type": "directMessage",
+    "avatar": "avatar2",
+    "nickname": "好友D",
+    "summary": "拍了几张好看的照片！",
+    "contentType": "image",
+    "imageName": "sample1",
+    "actionTitle": null,
+    "createdAt": "2025-01-14T13:30:00Z",
+    "unreadCount": 3,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "34",
+    "type": "system",
+    "avatar": "system",
+    "nickname": "系统助手",
+    "summary": "你的作品有新的评论。",
+    "contentType": "text",
+    "imageName": null,
+    "actionTitle": null,
+    "createdAt": "2025-01-13T09:50:00Z",
+    "unreadCount": 0,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "35",
+    "type": "system",
+    "avatar": "event",
+    "nickname": "福利社",
+    "summary": "你的返现奖励到账啦！",
+    "contentType": "action",
+    "imageName": null,
+    "actionTitle": "查看返现",
+    "createdAt": "2025-01-13T08:00:00Z",
+    "unreadCount": 1,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "36",
+    "type": "directMessage",
+    "avatar": "avatar4",
+    "nickname": "小林",
+    "summary": "帮我点个赞哈哈",
+    "contentType": "text",
+    "imageName": null,
+    "actionTitle": null,
+    "createdAt": "2025-01-12T18:20:00Z",
+    "unreadCount": 2,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "37",
+    "type": "directMessage",
+    "avatar": "avatar6",
+    "nickname": "朋友E",
+    "summary": "发你今天拍的图！",
+    "contentType": "image",
+    "imageName": "sample5",
+    "actionTitle": null,
+    "createdAt": "2025-01-12T13:30:00Z",
+    "unreadCount": 4,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "38",
+    "type": "system",
+    "avatar": "system",
+    "nickname": "系统服务",
+    "summary": "你有新的系统公告。",
+    "contentType": "text",
+    "imageName": null,
+    "actionTitle": null,
+    "createdAt": "2025-01-11T10:15:00Z",
+    "unreadCount": 0,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "39",
+    "type": "system",
+    "avatar": "event",
+    "nickname": "任务奖励",
+    "summary": "每日任务奖励可领取。",
+    "contentType": "action",
+    "imageName": null,
+    "actionTitle": "去领取",
+    "createdAt": "2025-01-11T08:00:00Z",
+    "unreadCount": 1,
+    "remark": null,
+    "isPinned": false
+  },
+
+  {
+    "id": "40",
+    "type": "directMessage",
+    "avatar": "avatar1",
+    "nickname": "Jerry",
+    "summary": "我给你发了几张照片！",
+    "contentType": "image",
+    "imageName": "sample6",
+    "actionTitle": null,
+    "createdAt": "2025-01-10T20:40:00Z",
+    "unreadCount": 3,
+    "remark": null,
+    "isPinned": false
+  }
+]
