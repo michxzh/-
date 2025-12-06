@@ -227,8 +227,8 @@
 
     1. 克隆项目
 	
-       git clone https://github.com/你的用户名/MessageCenterDemo.git
-       cd MessageCenterDemo
+       git clone https://github.com/michxzh/clientDemo.git
+       cd clientDemo
 
     2. 打开工程
 	
