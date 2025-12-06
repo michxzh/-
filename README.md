@@ -26,11 +26,11 @@
 
 ### 工程环境与架构
 
-•	使用 Swift + SwiftUI（原生）
-•	采用 MVVM + Repository + Persistence Layer
-•	完整模块化：UI / ViewModel / Repository / Persistence / Analytics
-•	SQLite3 原生数据库接入 + Migration 模块
-•	良好的可维护性：命名规范、分层清晰、独立网络与存储模块
+	•	使用 Swift + SwiftUI（原生）
+	•	采用 MVVM + Repository + Persistence Layer
+	•	完整模块化：UI / ViewModel / Repository / Persistence / Analytics
+	•	SQLite3 原生数据库接入 + Migration 模块
+	•	良好的可维护性：命名规范、分层清晰、独立网络与存储模块
 
 ⸻
 
