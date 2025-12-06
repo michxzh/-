@@ -248,3 +248,52 @@
 	
        方式 1：删除沙盒 Documents/messages.sqlite
        方式 2：删除模拟器 App 重新安装
+
+## 项目结构
+
+clientDemo/
+│
+├── clientDemo/
+│   ├── Common/                         # 通用工具层
+│   │   ├── AnalyticsManager.swift      # 埋点系统（CTR、趋势统计）
+│   │   ├── TimeFormatter.swift         # 统一时间文案格式器
+│   │   └── UI/                         # 通用 UI 组件
+│   │       ├── SkeletonListView.swift  # 骨架屏（弱网加载占位）
+│   │       ├── ErrorStateView.swift    # 错误态页面
+│   │       └── EmptyStateView.swift    # 空态页面
+│   │
+│   ├── Presentation/                   # UI 展示层（MVVM）
+│   │   ├── Remark/                     # 备注编辑模块
+│   │   │   ├── RemarkDetailContainer.swift
+│   │   │   ├── RemarkView.swift
+│   │   │   └── RemarkViewModel.swift
+│   │   │
+│   │   └── MessageList/                # 消息中心主界面
+│   │       ├── DataBoardView.swift     # 数据看板（CTR、趋势图表）
+│   │       ├── MessageRowWrapper.swift # Row 包装 + 点击、滑动事件
+│   │       ├── MessageListView.swift   # 消息列表主页面
+│   │       ├── MessageRowView.swift    # 消息 Cell（文本/图片/按钮）
+│   │       └── MessageListViewModel.swift
+│   │
+│   ├── Data/                           # 数据层
+│   │   ├── Repository/
+│   │   │   └── MessageRepository.swift # JSON + SQLite 数据融合
+│   │   │
+│   │   ├── Persistence/                # 持久化层（SQLite）
+│   │   │   ├── AnalyticsStore.swift    # 埋点事件表操作
+│   │   │   ├── AnalyticsEvent.swift    # 埋点事件模型
+│   │   │   ├── MessageStateStore.swift # 未读/备注/置顶 状态存储
+│   │   │   └── SQLiteManager.swift     # 数据库连接 + Schema Migration
+│   │   │
+│   │   └── LocalJSON/                  # 本地模拟数据
+│   │       └── messages.json           # 消息初始数据
+│   │
+│   └── Domain/                         # 领域层模型
+│       └── Models/
+│           ├── MessageContentType.swift # 消息体裁（文本/图片/按钮）
+│           ├── Message.swift            # 消息实体模型（含时间文案）
+│           └── MessageType.swift        # 消息来源类型（系统/点赞/关注…）
+│
+├── Assets/                             # App 资源（头像、图片）
+│
+└── clientDemoApp.swift                  # App 入口（Scene 管理）
