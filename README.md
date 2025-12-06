@@ -23,7 +23,8 @@
 	•	服务层（Analytics / Message Center）：埋点系统、CTR 计算、趋势分析、自动消息推送模块
 
 ## 功能列表
-1. 工程环境与架构
+
+### 工程环境与架构
 
 ✔ 使用 Swift + SwiftUI（原生）
 ✔ 采用 MVVM + Repository + Persistence Layer
