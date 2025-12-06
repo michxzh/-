@@ -4,13 +4,11 @@
 	•	项目简介￼
 	•	功能列表￼
 	•	技术方案￼
-	•	系统架构￼
 	•	核心难点与解决方案￼
 	•	运行环境￼
 	•	安装与运行指南￼
 	•	项目结构￼
 	•	截图展示￼
-	•	后续计划￼
 
 ## 项目简介
 本项目是一个使用 SwiftUI + SQLite + MVVM 架构 实现的完整消息中心 Demo，功能覆盖消息流展示、持久化、备注编辑、实时消息模拟、搜索、高级时间文案、弱网体验、Schema Migration、以及埋点与增长策略分析。
@@ -77,7 +75,7 @@
 
 
 
-## 进阶功能（Advanced Features）
+### 进阶功能（Advanced Features）
 
 ### 本地消息中心模拟（Local Message Center）
 
@@ -134,7 +132,7 @@
 	•	加载中使用 Skeleton 占位
 	•	模拟服务端延迟 / 网络错误
 
-## 自由探索功能（Growth & Analytics）
+### 自由探索功能（Growth & Analytics）
 
 ### 消息召回 & 增长策略分析（增长体系 Demo）
 
@@ -143,4 +141,76 @@
 	•	消息打开率（CTR）
 	•	消息类型 CTR（系统消息 / 图片消息 / 运营消息）
 	•	在个人页或备注页展示数据看板（Charts）
+	
+## 技术方案
+本项目采用 SwiftUI + MVVM 架构，数据层使用 SQLite 持久化。
 
+	•	SwiftUI：构建 UI 更高效，动画与列表能力强，便于实现 Cell 自动布局与转场效果。
+	•	MVVM：将 UI 与业务逻辑解耦，提高模块化、可维护性、可测试性。
+	•	Repository：数据源可替换（本地 JSON → 网络接口 → SQLite）。
+	•	SQLite：轻量但可靠，适用于未读数、备注、消息状态等持久化场景。
+	•	单例服务（AnalyticsManager / MessageCenter）：统一管理埋点与消息推送模拟，降低依赖
+
+## 核心难点与解决方案
+
+### 消息分页 + 本地状态（未读 / 备注 / 置顶）合并
+
+       - 难点：JSON 是静态数据，但未读、备注、置顶需要动态更新并持久化。
+       - 解决方案：
+	   
+           • 使用 Repository 合并 JSON + SQLite 数据
+           • 冷启动读取 SQLite 状态覆盖原始消息
+           • 统一排序规则（置顶优先 → 时间倒序）
+
+### Message Cell 动态高度（文本 / 图片 / 按钮 三种体裁）
+
+       - 难点：每种消息显示方式不同，Cell 需要自动撑开。
+       - 解决方案：
+	   
+           • SwiftUI VStack + switch 动态渲染内容
+           • 自动适配高度，与 List 完全兼容
+
+### 时间文案规则实现（刚刚 / x 分钟前 / 昨天 / 7 天内 / MM-dd）
+
+       - 难点：多规则判断且需本地化。
+       - 解决方案：
+	   
+           • 使用 Calendar + DateComponents 计算差值
+           • 封装 TimeFormatter.shared.format()
+
+### 模拟实时消息中心（每 5 秒推送一次）
+
+       - 难点：推送消息需同步刷新 UI、未读、动画滚动。
+       - 解决方案：
+	   
+           • 独立 MessageCenter（Timer 模拟推送）
+           • 插入消息自动触发 UI 刷新 + 滚动到顶部
+           • 同时记录埋点（new_message）
+
+### SQLite Schema Migration（新增 isPinned 字段）
+
+       - 难点：确保老版本数据库不崩溃。
+       - 解决方案：
+	   
+           • 使用 PRAGMA table_info 检查字段
+           • 缺少时自动执行 ALTER TABLE
+           • 保证迁移过程幂等、安全
+
+### 弱网/无网状态处理（错误态 / 重试 / Skeleton 骨架屏）
+
+       - 难点：本地数据无法模拟真实网络加载。
+       - 解决方案：
+	   
+           • 加载前添加超时检测（5s）
+           • isLoading / isError / isEmpty 多状态切换
+           • SkeletonListView 提升体验
+
+### 数据埋点链路（CTR、趋势分析、数据可视化）
+
+       - 难点：分析逻辑必须可追踪、可统计。
+       - 解决方案：
+	   
+           • 设计 analytics_event 表存储行为
+           • AnalyticsManager 统一埋点写入
+           • SQL 分析 CTR、趋势
+           • Swift Charts 可视化呈现
