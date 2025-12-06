@@ -22,3 +22,63 @@
 	•	数据层（Repository + JSON + SQLite）：本地 JSON 数据源、状态持久化、多表 Schema 管理
 	•	服务层（Analytics / Message Center）：埋点系统、CTR 计算、趋势分析、自动消息推送模块
 
+## 功能列表
+1. 工程环境与架构
+
+✔ 使用 Swift + SwiftUI（原生）
+✔ 采用 MVVM + Repository + Persistence Layer
+✔ 完整模块化：UI / ViewModel / Repository / Persistence / Analytics
+✔ SQLite3 原生数据库接入 + Migration 模块
+✔ 良好的可维护性：命名规范、分层清晰、独立网络与存储模块
+
+⸻
+
+2. 消息列表页（仿抖音消息首页）
+
+✔ UI 功能
+	•	混排好友消息 + 系统消息
+	•	消息 Cell 包含：头像、昵称、时间文案、消息摘要、未读角标
+	•	自动布局支持高度变化
+
+✔ 交互能力
+	•	下拉刷新（refreshable）
+	•	上滑加载更多（分页加载）
+	•	空态页面（无数据 / 首次失败）
+	•	重试按钮
+	•	骨架屏（Skeleton Loading UI）
+
+✔ 数据要求
+	•	本地 JSON 作为模拟数据源
+	•	首次进入加载 ≥ 20 条
+	•	分页加载（模拟服务端分页）
+
+⸻
+
+3. 备注页（Message Remark Page）
+	•	点击消息进入备注详情页
+	•	支持编辑备注文本
+	•	保存内容持久化入 SQLite
+	•	返回后主列表实时展示备注
+	•	SQLite 可使用 sqlite3 / FMDB / GRDB（此项目用 sqlite3）
+	•	备注页面包含转场动画（渐变 + 卡片放大）
+
+⸻
+
+4. 本地持久化（Local Persistence）
+	•	消息未读状态持久化
+	•	本地备注存储
+	•	用户交互（置顶等）完整落地 SQLite
+	•	支持冷启动同步状态
+	•	Schema Migration：自动新增字段 isPinned
+
+⸻
+
+进阶功能（Advanced Features）
+
+1. 本地消息中心模拟（Local Message Center）
+	•	定时器模拟服务器推送（每 5 秒插入新消息）
+	•	新消息到达后：
+	•	列表实时刷新
+	•	自动滚动到顶部
+	•	未读数 +1
+	•	触发埋点统计
