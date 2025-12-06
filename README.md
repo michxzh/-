@@ -214,3 +214,37 @@
            • AnalyticsManager 统一埋点写入
            • SQL 分析 CTR、趋势
            • Swift Charts 可视化呈现
+
+## 运行环境
+
+    • macOS 14+
+    • Xcode 15+
+    • Swift 5.9+
+    • iOS 17 模拟器或真机
+    • 无需后端服务（使用 JSON + SQLite 本地数据）
+	
+## 安装与运行指南
+
+    1. 克隆项目
+	
+       git clone https://github.com/你的用户名/MessageCenterDemo.git
+       cd MessageCenterDemo
+
+    2. 打开工程
+	
+       打开文件：通过xcode打开clientDemo
+
+    3. 安装依赖
+	
+       • 本项目无第三方库依赖（纯原生 SwiftUI + SQLite）
+       • 直接运行即可
+
+    4. 运行项目
+	
+       • 选择任意 iPhone 模拟器
+       • 点击 Xcode ▶ Run
+
+    5. （可选）重置数据库
+	
+       方式 1：删除沙盒 Documents/messages.sqlite
+       方式 2：删除模拟器 App 重新安装
